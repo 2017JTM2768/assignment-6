@@ -2,43 +2,43 @@
 
 ####### write your code here ##########
 
-def drawBoard(board):
+Board = []
 
-  6.     # This function prints out the board that it was passed.
+## Defining board position range
 
-  7.
+for x in range (0, 9) :
+    Board.append(str(x + 1))
 
-  8.     # "board" is a list of 10 strings representing the board (ignore index 0)
 
-  9.     print('   |   |')
 
- 10.     print(' ' + board[7] + ' | ' + board[8] + ' | ' + board[9])
 
- 11.     print('   |   |')
+## Board function
 
- 12.     print('-----------')
+def printBoard() :
+    print( '\n -----')
+    print( '|' + Board[0] + '|' + Board[1] + '|' + Board[2] + '|')
+    print( ' -----')
+    print( '|' + Board[3] + '|' + Board[4] + '|' + Board[5] + '|')
+    print( ' -----')
+    print( '|' + Board[6] + '|' + Board[7] + '|' + Board[8] + '|')
+    print( ' -----\n')
 
- 13.     print('   |   |')
+## Logic
 
- 14.     print(' ' + board[4] + ' | ' + board[5] + ' | ' + board[6])
+playerOneTurn = True
 
- 15.     print('   |   |')
+while True:
+	
+	if playerOneTurn :
+       		print( "Player 1’s chance")
+ 	else :
+        	print( "Player 2’s chance")
 
- 16.     print('-----------')
+	Number = int(raw_input("Enter the Board"))
 
- 17.     print('   |   |')
+	if (Number==1 or Number ==3 or Number == 5 or Number == 7 or Number == 9)
+		
 
- 18.     print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])
+	
+	
 
- 19.     print('   |   |')
-
-print("Welcome to the game!")
-print("Player 1's chance")
-
-#playerInput{}
-"""while True:
-	k = raw_input('Please enter the module ID: ')
-	val = raw_input('Please enter the grade for the module: ')
-        grades[k] = val
-
-"""
