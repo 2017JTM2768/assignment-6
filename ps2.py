@@ -1,4 +1,4 @@
-###### this is the second .py file ###########
+###### this is the 2nd .py file ###########
 
 ####### write your code here ##########
 
